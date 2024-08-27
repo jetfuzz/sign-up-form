@@ -1,3 +1,39 @@
-html {
-    background-color: peachpuff;
+body, html{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
 }
+
+.background-img {
+  height: 100vh;
+  background-size: cover;
+  width: 100%;
+}
+
+.feature-img {
+  flex: 1;
+}
+
+.form-section {
+  flex: 1;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+ }
+ 
+ .form-row {
+   display: flex;
+ }
+ 
+ .form-group {
+   padding: 5px;
+   width: 50%;
+ }
+ 
+ .form-group input {
+   width: 100%;
+ }
