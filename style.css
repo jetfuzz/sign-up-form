@@ -69,21 +69,25 @@ body, html{
 
 .main-content {
   flex: 1;
-  padding-top: 72px;
-  padding-left: 20px;
+  padding-top: 106px;
 }
 
 .intro {
   font-weight: bold;
   font-size: 1.1em;
   margin-bottom: 48px;
-  padding-right: 200px;
+  padding-right: 250px;
+  padding-left: 40px;
+  min-width: 300px;
 }
 
 form {
   background-color: #ffffff;
   width: 100%;
-   padding-bottom: 20px;
+  padding-bottom: 20px;
+  color: #3b3b3b;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  padding-left: 40px;
 }
 
 legend {
@@ -96,13 +100,17 @@ legend {
 label {
   display: inline-block;
   margin-bottom: 5px;
-  font-size: 0.9em;
+  font-size: 0.8em;
+  font-weight: bold;
+  letter-spacing: 1px;
  }
  
 input {
   border: 1px solid #E5E7EB;
   border-radius: 4px;
-  height: 22px;
+  height: 25px;
+  font-size: 0.85em;
+  padding-left: 6px;
 }
 
 .form-group input:focus {
@@ -111,39 +119,48 @@ input {
   box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 
-.form-group input:invalid {
+.form-group input:invalid:focus {
   border: 1px solid red;
 }
 
- .form-row {
-   display: flex;
-   
- }
+.form-row {
+  display: flex;
+  gap: 60px;
+}
  
- .form-group {
-   padding: 5px;
-   width: 400px;
- }
+.form-group {
+  padding: 5px;
+  width: 200px;
+}
  
  .form-group input {
-   width: 50%;
+   width: 100%;
  }
 
  .create-acc-btn {
   background-color: #596D48;
+  text-decoration: none;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   margin-top: 25px;
-  margin-left: 6px;
+  margin-left: 40px;
   color: #ffffff;
   padding: 12px 28px;
   font-weight: bold;
-  
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  outline: none;
+  transition: 0.1s all;
+ }
+
+ .create-acc-btn:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
  }
 
  .login {
   font-size: 0.9em;
+  padding-left: 40px;
  }
 
  .main-content a {
