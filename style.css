@@ -1,23 +1,74 @@
+@font-face {
+  font-family: "norse-bold";
+  src: url(norse-bold-webfont.woff), url(norse-bold-webfont.woff2);
+}
+
 body, html{
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
   display: flex;
   overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .background-img {
   height: 100vh;
   background-size: cover;
   width: 100%;
+  min-width: 430px;
 }
 
 .feature-img {
   flex: 1;
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.odin-logo {
+  height: 132px;
+  width: 100px;
+}
+
+.logo-container {
+  font-family: "norse-bold";
+  position: absolute;
+  width: 100%;
+  top: 26%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6em;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-section {
   flex: 1;
+  padding-top: 72px;
+  margin-right: 200px;
+  padding-left: 20px;
+}
+
+.logo-container p {
+  margin-top: 30px; 
+  margin-bottom: 30px;
+}
+
+.intro {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 50px;
+}
+
+legend {
+  font-size: 1.1em;
+  font-weight: bold;
 }
 
 label {
@@ -36,4 +87,14 @@ label {
  
  .form-group input {
    width: 100%;
+ }
+
+ .create-acc-btn {
+  background-color: #596D48;
+  border: none;
+  border-radius: 3px;
+ }
+
+ a {
+  color: #596D48;
  }
